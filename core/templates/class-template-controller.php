@@ -40,7 +40,7 @@ class TemplatesController {
 		  'title' => $template->getTitle(),
 		  'description' => $template->getDescription(),
 		  'content' => $template->getContent(),
-		  'post_types' => [EmailEditorDemoIntegration::MAILPOET_EMAIL_POST_TYPE],
+		  'post_types' => [EmailEditorDemoIntegration::A8C_MAIL_POST_TYPE],
 		]
 	  );
     }

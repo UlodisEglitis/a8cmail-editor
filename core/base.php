@@ -9,6 +9,7 @@ use MailPoet\EmailEditor\Engine\Settings_Controller;
 use MailPoet\EmailEditor\Engine\Theme_Controller;
 use MailPoet\EmailEditor\Engine\User_Theme;
 use MailPoet\EmailEditor\Integrations\Core\Initializer;
+use EmailEditorDemo\Blocks\PHP_Block;
 
 // The MailPoetEmailEditorContainerDefinition is a clone of packages/php/email-editor/tests/integration/_bootstrap.php file
 // We are using this file to define the DI container for the email editor package
@@ -87,6 +88,22 @@ class Base extends MailPoetEmailEditorContainerDefinition
       }
     );
 
+	  $container->set( \EmailEditorDemo\Blocks\PHP_Block::class,
+		  function ($container) {
+			  return new \EmailEditorDemo\Blocks\PHP_Block(
+				  $container->get(Cdn_Asset_Url::class),
+			  );
+		  }
+	  );
+
+	  $container->set( \EmailEditorDemo\Blocks\Block_Types_Controller::class,
+		  function ($container) {
+			  return new \EmailEditorDemo\Blocks\Block_Types_Controller(
+				  $container->get(PHP_Block::class)
+			  );
+		  }
+	  );
+
     $container->set(
       EmailEditorDemoIntegration::class,
       function ($container) {
@@ -95,6 +112,7 @@ class Base extends MailPoetEmailEditorContainerDefinition
           $container->get(EmailEditorDemoApiController::class),
           $container->get(\EmailEditorDemo\Patterns\PatternsController::class),
           $container->get(\EmailEditorDemo\Templates\TemplatesController::class),
+	        $container->get(\EmailEditorDemo\Blocks\Block_Types_Controller::class),
         );
       }
     );

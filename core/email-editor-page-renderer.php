@@ -30,7 +30,7 @@ class EmailEditorPageRenderer
     $postId = isset($_GET['post']) ? intval($_GET['post']) : 0;
     $post = get_post($postId);
 		$currentPostType = $post->post_type;
-    if (!$post instanceof \WP_Post || $currentPostType !== EmailEditorDemoIntegration::MAILPOET_EMAIL_POST_TYPE) { // phpcs:ignore Squiz.NamingConventions.ValidVariableName.MemberNotCamelCaps
+    if (!$post instanceof \WP_Post || $currentPostType !== EmailEditorDemoIntegration::A8C_MAIL_POST_TYPE) { // phpcs:ignore Squiz.NamingConventions.ValidVariableName.MemberNotCamelCaps
       return;
     }
 
@@ -96,8 +96,8 @@ class EmailEditorPageRenderer
         'editor_theme' => $this->themeController->get_base_theme()->get_raw_data(),
         'user_theme_post_id' => $this->userTheme->get_user_theme_post()->ID,
         'urls' => [
-          'listings' => admin_url('edit.php?post_type=' . EmailEditorDemoIntegration::MAILPOET_EMAIL_POST_TYPE),
-          'send' => admin_url('edit.php?post_type=' . EmailEditorDemoIntegration::MAILPOET_EMAIL_POST_TYPE),
+          'listings' => admin_url('edit.php?post_type=' . EmailEditorDemoIntegration::A8C_MAIL_POST_TYPE),
+          'send' => admin_url('edit.php?post_type=' . EmailEditorDemoIntegration::A8C_MAIL_POST_TYPE),
         ],
       ]
     );
