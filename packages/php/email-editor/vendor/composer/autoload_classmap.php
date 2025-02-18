@@ -24,6 +24,7 @@ return array(
     'EmailEditorDemo\\Templates\\Newsletter' => $baseDir . '/../../../core/templates/template-newsletter.php',
     'EmailEditorDemo\\Templates\\SimpleLight' => $baseDir . '/../../../core/templates/template-simple-light.php',
     'EmailEditorDemo\\Templates\\TemplatesController' => $baseDir . '/../../../core/templates/class-template-controller.php',
+    'EmailEditorDemo\\Templates\\WPcom2022' => $baseDir . '/../../../core/templates/template-wpcom2022.php',
     'MailPoetUnitTest' => $baseDir . '/tests/unit/_bootstrap.php',
     'MailPoet\\EmailEditor\\AccessDeniedException' => $baseDir . '/src/exceptions.php',
     'MailPoet\\EmailEditor\\ConflictException' => $baseDir . '/src/exceptions.php',

@@ -67,6 +67,7 @@ class ComposerStaticInit3ec3d68813951a5994b8185678e256db
         'EmailEditorDemo\\Templates\\Newsletter' => __DIR__ . '/../..' . '/../../../core/templates/template-newsletter.php',
         'EmailEditorDemo\\Templates\\SimpleLight' => __DIR__ . '/../..' . '/../../../core/templates/template-simple-light.php',
         'EmailEditorDemo\\Templates\\TemplatesController' => __DIR__ . '/../..' . '/../../../core/templates/class-template-controller.php',
+        'EmailEditorDemo\\Templates\\WPcom2022' => __DIR__ . '/../..' . '/../../../core/templates/template-wpcom2022.php',
         'MailPoetUnitTest' => __DIR__ . '/../..' . '/tests/unit/_bootstrap.php',
         'MailPoet\\EmailEditor\\AccessDeniedException' => __DIR__ . '/../..' . '/src/exceptions.php',
         'MailPoet\\EmailEditor\\ConflictException' => __DIR__ . '/../..' . '/src/exceptions.php',

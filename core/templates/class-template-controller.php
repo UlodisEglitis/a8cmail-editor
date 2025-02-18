@@ -23,8 +23,7 @@ class TemplatesController {
 
   public function registerTemplates() {
 	$templates = [];
-    $templates[] = new Newsletter();
-    $templates[] = new SimpleLight();
+	$templates[] = new WPcom2022();
 
     foreach ($templates as $template) {
 	  $templateName = $this->templatePrefix . '//' . $template->getSlug();

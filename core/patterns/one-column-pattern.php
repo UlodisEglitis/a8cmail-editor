@@ -17,25 +17,46 @@ class OneColumnPostContentPattern extends Abstract_Pattern {
 
 	public function get_content(): string {
 	  return '
-	  <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
-	  <div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading -->
-	  <h2 class="wp-block-heading">' . __('1 column layout for blockTypes: core/post-content', 'email-editor-demo') . '</h2>
-	  <!-- /wp:heading -->
+<!-- wp:create-block/php-block /-->
+	  <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"layout":{"type":"constrained"},"metadata":{"categories":["email-contents"],"patternName":"mailpoet/1-column-content","name":"1 Column"}} -->
+<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"id":49,"width":"504px","sizeSlug":"large","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="http://localhost:8888/wp-content/uploads/2025/02/hd-05-themes-design@2x-1024x410.png" alt="" class="wp-image-49" style="width:504px"/></figure>
+<!-- /wp:image -->
 
-	  <!-- wp:paragraph -->
-	  <p>' . __('A one-column layout is great for simplified and concise content, like announcements or newsletters with brief updates. Drag blocks to add content and customize your styles from the styles panel on the top right.', 'email-editor-demo') . '</p>
-	  <!-- /wp:paragraph -->
+<!-- wp:create-block/php-block /-->
 
-	  <!-- wp:image -->
-	  <figure class="wp-block-image"><img alt=""/></figure>
-	  <!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>One of the most exciting parts of creating a new store is <strong>picking a beautiful theme</strong>.</p>
+<!-- /wp:paragraph -->
 
-	  <!-- wp:buttons -->
-	  <div class="wp-block-buttons"><!-- wp:button -->
-	  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button">' . __('Add button text', 'email-editor-demo') . '</a></div>
-	  <!-- /wp:button --></div>
-	  <!-- /wp:buttons --></div>
-	  <!-- /wp:group -->
+<!-- wp:paragraph -->
+<p>Each professionally designed theme allows you to <strong>customize</strong> it to <strong>match the look and feel</strong> of your brand. They load quickly, are mobile-friendly, and <strong>put your products first</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>So, let’s start by finding the perfect theme.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"style":{"color":{"background":"#3858e9"},"border":{"radius":"6px"}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-background wp-element-button" href="https://wordpress.com/themes/testa8c.wordpress.com" style="border-radius:6px;background-color:#3858e9">Design my store</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph -->
+<p>If you’re ready to start owning your future today, <a class="" href="https://wordpress.com/plans/testa8c.wordpress.com" target="_blank" rel="noreferrer noopener">launch your store</a> for only $300 a month.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":59,"width":"80px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="http://localhost:8888/wp-content/uploads/2025/02/staff-marta@2x.png" alt="" class="wp-image-59" style="width:80px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Marta<br><strong>The WordPress.com Team</strong></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 	  ';
 	}
 
