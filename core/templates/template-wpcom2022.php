@@ -25,7 +25,7 @@ class WPcom2022 {
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|10","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"id":20,"width":"130px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="http://localhost:8002/wp-content/uploads/2025/01/wp-1024x210.png" alt="" class="wp-image-20" style="width:130px"/></figure>
+<figure class="wp-block-image size-large is-resized"><img src="http://localhost:8888/wp-content/uploads/2025/01/wp-1024x210.png" alt="" class="wp-image-20" style="width:130px"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -44,7 +44,7 @@ class WPcom2022 {
 <!-- /wp:spacer -->
 
 <!-- wp:image {"id":21,"width":"60px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost:8002/wp-content/uploads/2025/01/icon-wp-jetpack.png" alt="" class="wp-image-21" style="width:60px;height:auto"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="http://localhost:8888/wp-content/uploads/2025/01/icon-wp-jetpack.png" alt="" class="wp-image-21" style="width:60px;height:auto"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -61,13 +61,13 @@ class WPcom2022 {
 <div class="wp-block-group"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"120px"} -->
 <div class="wp-block-column" style="flex-basis:120px"><!-- wp:image {"lightbox":{"enabled":false},"id":25,"width":"115px","sizeSlug":"full","linkDestination":"custom"} -->
-<figure class="wp-block-image size-full is-resized"><a href="https://play.google.com/store/apps/details?id=com.jetpack.android&amp;referrer=utm_source%3Dblast%26utm_medium%3Demail&amp;pli=1"><img src="http://localhost:8002/wp-content/uploads/2025/01/wpcom-gplay-2x-2.png" alt="" class="wp-image-25" style="width:115px"/></a></figure>
+<figure class="wp-block-image size-full is-resized"><a href="https://play.google.com/store/apps/details?id=com.jetpack.android&amp;referrer=utm_source%3Dblast%26utm_medium%3Demail&amp;pli=1"><img src="http://localhost:8888/wp-content/uploads/2025/01/wpcom-gplay-2x-2.png" alt="" class="wp-image-25" style="width:115px"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"lightbox":{"enabled":false},"id":23,"width":"115px","sizeSlug":"full","linkDestination":"custom"} -->
-<figure class="wp-block-image size-full is-resized"><a href="https://apps.apple.com/app/apple-store/id1565481562?pt=299112&amp;ct=blast_email&amp;mt=8"><img src="http://localhost:8002/wp-content/uploads/2025/01/wpcom-app-store-2x.png" alt="" class="wp-image-23" style="width:115px"/></a></figure>
+<figure class="wp-block-image size-full is-resized"><a href="https://apps.apple.com/app/apple-store/id1565481562?pt=299112&amp;ct=blast_email&amp;mt=8"><img src="http://localhost:8888/wp-content/uploads/2025/01/wpcom-app-store-2x.png" alt="" class="wp-image-23" style="width:115px"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -88,25 +88,25 @@ class WPcom2022 {
 <div class="wp-block-column"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"34px"} -->
 <div class="wp-block-column" style="flex-basis:34px"><!-- wp:image {"id":27,"width":"24px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost:8002/wp-content/uploads/2025/01/wpcom-social-x-2x.png" alt="" class="wp-image-27" style="width:24px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="http://localhost:8888/wp-content/uploads/2025/01/wpcom-social-x-2x.png" alt="" class="wp-image-27" style="width:24px"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"34px"} -->
 <div class="wp-block-column" style="flex-basis:34px"><!-- wp:image {"id":28,"width":"24px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost:8002/wp-content/uploads/2025/01/wpcom-social-fb-2x.png" alt="" class="wp-image-28" style="width:24px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="http://localhost:8888/wp-content/uploads/2025/01/wpcom-social-fb-2x.png" alt="" class="wp-image-28" style="width:24px"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"34px"} -->
 <div class="wp-block-column" style="flex-basis:34px"><!-- wp:image {"id":31,"width":"24px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost:8002/wp-content/uploads/2025/01/wpcom-social-ig-2x-1.png" alt="" class="wp-image-31" style="width:24px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="http://localhost:8888/wp-content/uploads/2025/01/wpcom-social-ig-2x-1.png" alt="" class="wp-image-31" style="width:24px"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"34px"} -->
 <div class="wp-block-column" style="flex-basis:34px"><!-- wp:image {"id":30,"width":"24px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost:8002/wp-content/uploads/2025/01/wpcom-social-yt-2x.png" alt="" class="wp-image-30" style="width:24px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="http://localhost:8888/wp-content/uploads/2025/01/wpcom-social-yt-2x.png" alt="" class="wp-image-30" style="width:24px"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -118,7 +118,7 @@ class WPcom2022 {
 <!-- /wp:columns -->
 
 <!-- wp:image {"id":33,"width":"150px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="http://localhost:8002/wp-content/uploads/2025/01/WP-bb-logo-1024x138.png" alt="" class="wp-image-33" style="width:150px"/></figure>
+<figure class="wp-block-image size-large is-resized"><img src="http://localhost:8888/wp-content/uploads/2025/01/WP-bb-logo-1024x138.png" alt="" class="wp-image-33" style="width:150px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
