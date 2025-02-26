@@ -236,31 +236,32 @@ class EmailEditorDemoIntegration
 	public function registerPersonalizationTags() {
 		add_filter('mailpoet_email_editor_register_personalization_tags', function( Personalization_Tags_Registry $registry ): Personalization_Tags_Registry {
 			$registry->register(new Personalization_Tag(
-        __('Email', 'email-editor-demo'),
-        'mailpoet/subscriber-email', // testing using mailpoet -- not working
-        __('Subscriber', 'email-editor-demo'),
-        function (array $context, array $args = []): string {
-					return $context['recipient_email'] ?? '';
+				__('User first name', 'email-editor-demo'),
+				'guides/user-first-name',
+				__('Subscriber', 'email-editor-demo'),
+				function (array $context, array $args = []): string {
+					if ( isset($context['is_user_preview'] ) && $context['is_user_preview'] ) {
+						return 'John';
+					}
+					return '<?php echo "$user_first_name"; ?>';
 				},
-      ));
+			));
+			$registry->register(new Personalization_Tag(
+				__('User Domain URL', 'email-editor-demo'),
+				'guides/user-domain',
+				__('Link', 'email-editor-demo'),
+				function (array $context, array $args = []): string {
+					$base_url = '';
+					if ( isset( $args['base_url'] ) ) {
+						$base_url = $args['base_url'];
+					}
 
-      // Site Personalization Tags
-      $registry->register(new Personalization_Tag(
-        __('Site Title', 'email-editor-demo'),
-        'mailpoet/site-title',
-        __('Site', 'email-editor-demo'), // testing using mailpoet -- not working
-        function (array $context, array $args = []): string {
-					return htmlspecialchars_decode(get_bloginfo('name'));
+					if ( isset($context['is_user_preview'] ) && $context['is_user_preview'] ) {
+						return $base_url . 'testa8c.wordpress.com';
+					}
+					return $base_url . '$domain';
 				},
-      ));
-      $registry->register(new Personalization_Tag(
-        __('Homepage URL', 'email-editor-demo'),
-        'mailpoet/site-homepage-url',
-        __('Site', 'email-editor-demo'), // testing using mailpoet -- not working
-        function (array $context, array $args = []): string {
-					return get_bloginfo('url');
-				},
-      ));
+			));
 			return $registry;
 		});
 	}
